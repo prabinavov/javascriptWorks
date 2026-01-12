@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body>
+    <h1 id="domhead">Dom manipulation</h1>
+
+    <ul>
+        <li class="cl">document.getElementById()</li>
+        <li>document.getElementByClassName()</li>
+        <li>document.getElementByTagName()</li>
+        <li class="cl">document.querySelector()</li>
+        <li>document.querySelectorAll()</li>
+    </ul>
+
+    <button class="btn" onclick="btnclick()">submit</button>
+    
+    <script>
+        // document.getElementById()
+
+        const documentId=document.getElementById("domhead")
+
+        console.log(documentId);
+
+        documentId.style.color="red"
+
+        // document.geElementByclassname()
+
+
+        const documentclass=document.getElementsByClassName("cl")
+
+        console.log(documentclass);
+        
+        //convert html collectins to arry
+
+        console.log(Array.from(documentclass).map(items=>items.style.color="green"));
+        console.log();
+        
+
+        // document.getElementBYTagname
+
+        const documentTag=document.getElementsByTagName("li")
+
+        console.log(documentTag);
+
+        //convert html collection to an arry
+
+        console.log([documentTag]);
+        console.log([documentId]);
+
+        //document.queryselector
+        const query=document.querySelector('#domhead')
+        console.log(query);
+        
+
+        //document.queryselectorall
+
+        const queryall=document.querySelectorAll("li")
+        console.log(queryall);
+        
+
+        // butte selkect
+        const btnclass=document.getElementsByClassName("btn")
+
+        console.log(btnclass);
+        
+        // button  clickevent
+
+        function btnclick(){
+            alert(" error")
+        }
+
+        
+        
+
+        
+
+
+        
+
+
+    </script>
+
+</body>
+</html>

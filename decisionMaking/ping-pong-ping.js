@@ -3,7 +3,7 @@
 //pingpong if the number is / by 15
 //other vise invalid
 
-var num= 4;
+var num= 30;
 
  if (num%15==0){  // 4/15==0  false
     console.log("pingpong");

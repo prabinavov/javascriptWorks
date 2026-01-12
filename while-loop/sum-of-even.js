@@ -1,6 +1,6 @@
 //w .p to display sum of even numbers up to limit
 
-var limit=4;
+var limit=6;
 
 var sum=0;
 

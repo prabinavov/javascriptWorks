@@ -7,7 +7,7 @@
 
 //map
 
-/*var numbers=[2,3,4,5,6,7,8,9,8]
+var numbers=[2,3,4,5,6,7,8,9,8]
 
 console.log(`numbers${numbers}`);
 
@@ -34,7 +34,7 @@ console.log("qube of numbers");
 
 var qube=numbers.map(num=>num**3)
 
-console.log(qube);*/
+console.log(qube);
 
 
 

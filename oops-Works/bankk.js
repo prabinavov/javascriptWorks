@@ -11,7 +11,6 @@ balEnq()
 
 */
 
-
 class Bank{
 
     createAccount(acno,customerName,accType,balanace){
@@ -47,8 +46,6 @@ class Bank{
         
     }
 }
-
-
 
 var custInstance1 = new Bank()
 
