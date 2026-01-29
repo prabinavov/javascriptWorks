@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+                <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <h1 class="text-3xl text-center font-semibold">Table</h1>
+ <div class="flex justify-center">
+       <table class="table-auto border">
+  <thead>
+    <tr class="border">
+      <th class="border">userid</th>
+      <th class="border">Id</th>
+      <th class="border">Title</th>
+     <th class="border">Title</th>
+
+    </tr>
+  </thead>
+  <tbody id="result" class="border">
+    <tr class="border">
+      <td class="border"> </td>
+      <td class="border"> </td>
+      <td class="border"></td>
+    </tr>
+   
+  </tbody>
+</table>
+ </div>
+</body>
+<script>
+    // AJAX API CALL
+
+    //1. Create a new HMLhttp request Object
+
+    const response= new XMLHttpRequest()
+
+    //2. connect to APIcall
+
+    response.open('get','https://jsonplaceholder.typicode.com/todos')
+
+
+    //3.send
+
+    response.send()
+
+    //4.set onready state chnage
+
+    response.onreadystatechange =() => {
+
+
+        if(response.readyState == 4){
+            if(response.status > 199 && response.status <300){
+                console.log(response.responseText);
+                
+                const todoArray=JSON.parse(response.responseText)
+                console.log(todoArray);
+                displaydata(todoArray)
+                
+            }
+        }
+    }
+
+    //5.dsplay  arry of data into the browser
+
+    function displaydata(todoArray){
+        for(let to of todoArray){
+            htmlData =` <tr class="border">
+      <td class="border">${to.userid}</td>
+      <td class="border">${to.id}</td>
+      <td class="border">${to.title}</td>
+     <td class="border">${to.completed}</td>
+
+    </tr>`
+
+    result.innerHTML+=htmlData
+        }
+    }
+
+
+</script>
+</html>

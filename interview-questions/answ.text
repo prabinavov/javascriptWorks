@@ -1,0 +1,22 @@
+1. what are the brake point for view port responsive design
+
+ans: desk top= 1536 (px),mobile =480 (px)
+
+2. Whyweusebox-sizingincssJavascriptinterview Question
+
+ans: controlling width and height of an elements
+
+3. WhatisEcmascriptinJavascript
+
+ans:ECMAScript is the rulebook or standard that JavaScript follows.
+
+4.What is difference between let,const and var
+
+ans: let = blocklvel scope variable shouldbe changable
+     const = blocklvel scope, variable cannot be changable
+     var = global scope , variable changable
+
+
+5. ● What is spread operator, Rest operator , default parameter
+     
+     ans:

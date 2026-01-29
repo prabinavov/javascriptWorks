@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen h-96  flex justify-center items-center ">
+
+
+    
+    <div class=" max-h-3/4 min-w-3/4   bg--500 ">
+        <div class="flex justify-center items-center">
+            <h1 class="text-4xl font-semibold"> MY KEY BOARD</h1>
+        </div>
+        <div class="min-h-[100px] min-w-[500px] ">
+            <input id="result" type="text" placeholder="|">
+        </div>
+        
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base" onclick="disply('~')">~</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply('?')" >?</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(1)" >1</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(2)" >2</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(3)" >3</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(4)" >4</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(5)" >5</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(6)" >6</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(7)" >7</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(8)" >8</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(9)" >9</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply(0)" >0</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply('x')" >x</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base"  onclick="disply('y')" >Y</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[61px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary  border-3 border-indigo-700 rounded-base"   onclick="disply('Z')" >Z</button>
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('A')" >A</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('B')" >B</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('C')" >C</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('D')" >D</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('L')" >L</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('E')" >E</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('F')" >F</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('G')" >G</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('H')" >H</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('I')" >I</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('J')" >J</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-2 border-indigo-700 rounded-base"  onclick="disply('K')" >K</button>
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('L')" >L</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('M')" >M</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[61px]  py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('del')" >del</button>
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[250px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base" onclick="cpslock()">Capslock</button>
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('M')" >M</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('N')" >N</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('O')" >O</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('P')" >P</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('Q')" >Q</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('R')" >R</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('S')" >S</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base"  onclick="disply('T')" >T</button>
+
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[200px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-2 border-indigo-700 rounded-base" onclick="clearBox()">back space</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[230px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base hover:bg-red-700" onclick="enter()">Enter</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base">U</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base">V</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700 rounded-base">W</button>
+
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[800px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base " onclick="space()">space</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base">end</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base">ctrl</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[100px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary border-3 border-indigo-700  rounded-base">alt</button>
+            <button class="px-2 min-h-[100px] hover:bg-red-700 bg-black text-white min-w-[90px] py-1.5 text-xs font-semibold text-heading bg-neutral-tertiary  border-3 border-indigo-700 rounded-base">pgup</button>
+
+
+    </div>
+
+    
+</body>
+<script src="./key.js"></script>
+</html>

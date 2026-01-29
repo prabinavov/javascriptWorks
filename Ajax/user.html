@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+    <h1 class="text-3xl text-center ">Users Data </h1>
+
+    <div class="flex justify-center">
+        <table class="table-auto border">
+            <thead>
+                <tr class="border">
+                    <th class="border">id</th>
+                    <th class="border">name</th>
+                    <th class="border">username</th>
+                    <th class="border">email</th>
+                    <th class="border">adress</th>
+
+                </tr>
+            </thead>
+            <tbody id="result" class="border">
+                    <tr class="border">
+                    <td class="border"> </td>
+                    <td class="border"> </td>
+                    <td class="border"></td>
+                    <td class="border"></td>
+
+
+               </tr>
+   
+  </tbody>
+
+        </table>
+
+    </div>
+
+
+    
+    
+</body>
+
+<script>
+    const response=new XMLHttpRequest()
+
+    response.open('get','https://jsonplaceholder.typicode.com/users')
+
+
+    response.send()
+
+    response.onreadystatechange =() =>{
+        if(response.readyState == 4){
+            if(response.status > 199 && response.status <300){
+                console.log(response.responseText);
+
+                const UserArry=JSON.parse(response.responseText)
+                console.log(UserArry);
+                displaydata(UserArry)
+                
+                
+            }
+        }
+    }
+
+
+
+    function displaydata(UserArry){
+        for(let u of UserArry){
+            htmlData=`<tr class="border">
+      <td class="border">${u.id}</td>
+      <td class="border">${u.name}</td>
+      <td class="border">${u.username}</td>
+     <td class="border">${u.email}</td>
+          <td class="border">${u.address.city}</td>
+
+
+
+    </tr>`
+
+    result.innerHTML+=htmlData
+
+        }
+    }
+</script>
+</html>

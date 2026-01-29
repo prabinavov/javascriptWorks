@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body class=" d-flex justify-content-center">
+    <div class="card text-center mb-5 p-4 background-color  " style="width: 25rem; ">
+  <div class="card-body background-color ">
+    <h5 class="card-title"></h5>
+    <input id="cname" type="text" placeholder="contryname">
+    <p class="card-text"></p>
+    <button onclick="Submit()">Submit</button>
+  </div>
+</div>
+
+
+ <div class="container  d-flex justify-content-center border ">
+
+        <h1 class="mt-5 ">Post details</h1>
+
+        <div class="row" id="result"></div>
+
+    </div>
+</body>
+
+<script>
+
+    function displayCount(){
+        console.log(countr.value);
+        let cntry=countr.value
+
+        
+    fetch('https://restcountries.com/v3.1/name/russia?fullText=tru')
+    .then(data=>data.json())
+
+    .then(contry=>displayContent(contry))
+
+    .catch(err=>console.log(err))
+
+        
+    }
+
+
+
+    function displayContent(contry){
+
+        let count=contry[0]
+
+            HtmlData=``
+       for(let c of contry){
+
+        HtmlData=`<div class="container">
+        <h1 class="mt-5 ">Post </h1>
+
+        <div class="row" id="cardContainer"></div>
+
+    </div>`
+
+    
+
+
+
+    result.innerHTML+=HtmlData
+       }
+    }
+
+
+</script>
+
+</html>

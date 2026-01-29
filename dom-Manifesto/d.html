@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+         <div id="child">parent</div>
+
+
+
+    </div>
+<!-- return the nodelist of an elemet -->
+    <ul id="development">
+        <li>child</li>
+        <li>child</li>
+        <li>child</li>
+        <li>child</li>
+    </ul>
+<!-- 3. inner html set a content to a html DOM -->
+
+<div id="element">
+    <p>developer</p>
+</div>
+
+<!-- 4.text content -->
+
+<div id="Text">
+    <h2>web Developer</h2>
+
+</div>
+
+    <script>
+
+        const childElement=document.getElementById('child')
+        console.log(childElement);
+
+        const parentElement=childElement.parentNode
+        console.log(parentElement);
+        
+
+        const nodeElemets=document.getElementById('development')
+        console.log(nodeElemets);
+//child nte list edukkan , parent is nodeElements 
+        const chiledElmnt=nodeElemets.childNodes
+        console.log(chiledElmnt);
+
+    // 3.inner.HTML
+    
+    const divElement=document.getElementById('element')
+    console.log(divElement);
+    
+
+    divElement.innerHTML='<h1 style="color:red">luminar technolab</h1>'
+        
+        //4.text
+
+        const TextElement=document.getElementById('Text')
+        console.log(TextElement);
+        TextElement.textContent='MEARN STACK WEB DEVELOPER'
+        
+    </script>
+</body>
+</html>

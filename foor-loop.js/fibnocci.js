@@ -17,10 +17,7 @@ for(i=3;i<=limit;i++){ //
     
 
     prev=curr;
-    curr=next;
-    
-    
-
+    curr=next; 
 }
 
 

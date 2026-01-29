@@ -1,6 +1,6 @@
 // digits count
 
-var number = 121;
+/*var number = 121;
 
 var count = 0;
 
@@ -11,3 +11,17 @@ while(number!=0){
 
 }
 console.log(count);
+*/
+
+
+var text="abusada"
+
+var count=0
+
+for(let c of text){
+    count++
+}
+console.log(count);
+
+
+

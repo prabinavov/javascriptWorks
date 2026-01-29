@@ -1,0 +1,39 @@
+.border{
+    background-color: bisque;
+    width: 400px;
+    height: 600px;
+}
+body{
+    background-color: rgb(40, 189, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.container{
+
+   
+
+    width: 25%;
+    height: 200px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(231, 233, 237);
+    border: 5px solid black;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+
+    
+
+    
+}
+.btn{
+    size: 10px;
+}
+
+

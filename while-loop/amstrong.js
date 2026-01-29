@@ -14,7 +14,6 @@ digitcount = 0;
 sum=0;
 
 
-
 while(number!=0){
 
     number = Math.floor(number/10);

@@ -1,6 +1,6 @@
 //prime number
 
-var number=7 ;  n=7
+var number=7 ; // n=7
 
 var isprime=true; //assume is prime = true
 

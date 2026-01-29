@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <!-- tw-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./va.css">
+</head>
+<body class="bg-black">
+
+    <nav class="bg-black p-5 text-red-700 text-center text-4xl font-bold">CAR WORLD</nav>
+
+    <div class="flex justify-evenly mt-10 ">
+
+        <div class="w-[28%] h-[450px] rounded-xl bg-green-200 text-center p-5">
+            <h1 class="text-2xl font-bold mt-3">Car Name</h1>
+            <input class="border rounded-lg p-2 w-[90%] mt-2 bg-white" type="text" id="brand" placeholder="Car Name">
+
+            <h1 class="text-2xl font-bold mt-4">Car Price</h1>
+            <input class="border rounded-lg p-2 w-[90%] mt-2 bg-white" type="text" id="prices" placeholder="Car Price">
+
+            <h1 class="text-2xl font-bold mt-4">Key</h1>
+            <input class="border rounded-lg p-2 w-[90%] mt-2 bg-white" type="text" id="keys" placeholder="Key">
+
+            <button onclick="store()" class="click w-[50%] mt-8 ml-23">Store Data</button>
+        </div>
+        <div class="w-[28%] h-[450px] rounded-xl bg-green-300 text-center p-5">
+            <h1 class="text-2xl font-bold mt-2">Retrieve Key</h1>
+            <input class="border rounded-lg p-2 w-[90%] mt-2 bg-white" type="text" id="retrieveKey" placeholder="Enter Key">
+
+            <button onclick="retrieve()" class="click w-[50%] mt-8 ml-23">Retrieve Data</button>
+            <p id="result"></p>
+        </div>
+        <div class="w-[28%] h-[450px] rounded-xl bg-green-300 text-center p-5">
+            <h1 class="text-2xl font-bold mt-2">Remove Data</h1>
+            <input class="border rounded-lg p-2 w-[90%] mt-2 bg-white" type="text" id="removeKey" placeholder="Enter Key">
+
+            <button onclick="remove()" class="click w-[50%] mt-8 ml-23 ">Remove</button>
+        </div>
+
+    </div>
+
+    <div class="flex justify-center">
+        <button onclick="clearAll()" class=" h-[60px] w-[15%] text-2xl font-bold   mt-10 click">
+            Clear All
+        </button>
+    </div>
+    
+</body>
+<script src="./ca.js"></script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./age.css">
+</head>
+<body>
+ 
+
+    <div  class="container ">
+
+        <h1>Age Chaker</h1>
+        
+            <input id="Agevalue" type="text" class="form-control my-3">
+
+        <div class="text-center">
+                    <button onclick="Agechecker()" class="btn" style="background-color: blue;">check</button>
+
+                    <p id="result"></p>
+
+        </div>
+
+        
+
+        </div>
+      
+    </div>
+    
+     <script>
+        function Agechecker(){
+            const userAge=document.getElementById('Agevalue').value 
+           
+            
+            const result=document.getElementById('result')
+            
+            if(userAge>=18){
+                result.textContent ="eligible";
+                result.style.color ="green";
+            }
+            else{
+                result.textContent ="noteligible";
+                result.style.color="red";
+            }
+        }
+     </script>
+</body>
+</html>

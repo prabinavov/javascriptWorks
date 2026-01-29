@@ -1,0 +1,16 @@
+.click{
+    background: linear-gradient( #4c1010, #4b1717);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    font-weight: bolder;
+    color: #51de5a;
+    padding: 10px;
+   
+
+    
+}
+
+

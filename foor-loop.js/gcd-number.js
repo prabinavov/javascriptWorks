@@ -16,3 +16,6 @@ for(let i=1;i<=minNumber;i++){   // i = 1 , 1<12 t  2<12
 }
 console.log(gcd);
 
+
+
+
